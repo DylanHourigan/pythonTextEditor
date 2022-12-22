@@ -7,8 +7,10 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 root = Tk("Text Editor")
 root.title("Text Editor")
 root.iconbitmap("icon.ico")
+root.configure(bg="#001899")
 text = Text(root)
 text.pack(side="top", fill="both", expand=True)
+text.configure(bg="#001899",fg="#FFFFFF")
 
 def saveAs():
     global text
