@@ -8,7 +8,7 @@ root = Tk("Text Editor")
 root.title("Text Editor")
 root.iconbitmap("icon.ico")
 text = Text(root)
-text.grid()
+text.pack(side="top", fill="both", expand=True)
 
 def saveAs():
     global text
@@ -39,7 +39,9 @@ def openFile():
 
 
 button = Button(root, text="Save", command=saveAs)
-button.grid()
+button.pack(side="left")
 button2 = Button(root, text="Open", command=openFile)
-button2.grid()
+button2.pack(side="left")
+exitbutton = Button(root, text="Exit", command=root.destroy)
+exitbutton.pack(side="left")
 root.mainloop()
