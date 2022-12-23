@@ -1,5 +1,5 @@
 # Project Title
-Text Editor
+Python Text Editor
 
 # Project Description
 This is a simple text editor built with Python and the Tkinter library. It allows the user to open and save text files, as well as change the background color of the text editor window.
